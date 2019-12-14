@@ -31,16 +31,3 @@ Persik.propTypes = {
 };
 
 export default Persik;
-
-const Persik1 = props => (
-	<Panel id={props.id}>
-		<PanelHeader
-			left={<HeaderButton onClick={props.go} data-to="home">
-				{osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
-			</HeaderButton>}
-		>
-			Persik
-		</PanelHeader>
-		<img className="Persik1" src={persik} alt="Persik The Cat"/>
-	</Panel>
-);
