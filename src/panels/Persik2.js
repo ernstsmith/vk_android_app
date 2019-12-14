@@ -8,39 +8,39 @@ import Icon28ChevronBack from '@vkontakte/icons/dist/28/chevron_back';
 import Icon24Back from '@vkontakte/icons/dist/24/back';
 
 import persik from '../img/persik.png';
-import './Persik.css';
+import './Persik2.css';
 
 const osName = platform();
 
-const Persik = props => (
+const Persik2 = props => (
 	<Panel id={props.id}>
 		<PanelHeader
 			left={<HeaderButton onClick={props.go} data-to="home">
 				{osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
 			</HeaderButton>}
 		>
-			Persik
+			Persik2
 		</PanelHeader>
-		<img className="Persik" src={persik} alt="Persik The Cat"/>
+		<img className="Persik2" src={persik} alt="Persik2 The Cat"/>
 	</Panel>
 );
 
-Persik.propTypes = {
+Persik2.propTypes = {
 	id: PropTypes.string.isRequired,
 	go: PropTypes.func.isRequired,
 };
 
-export default Persik;
+export default Persik2;
 
-const Persik1 = props => (
+const Persik21 = props => (
 	<Panel id={props.id}>
 		<PanelHeader
 			left={<HeaderButton onClick={props.go} data-to="home">
 				{osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
 			</HeaderButton>}
 		>
-			Persik
+			Persik2
 		</PanelHeader>
-		<img className="Persik1" src={persik} alt="Persik The Cat"/>
+		<img className="Persik21" src={persik} alt="Persik2 The Cat"/>
 	</Panel>
 );
